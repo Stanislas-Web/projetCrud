@@ -1,0 +1,105 @@
+header{
+    width: 100%;
+    background-color: #1C71B1;
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+main{
+    padding: 3%;
+}
+table{
+    width: 100%;
+}
+
+label{
+    color: #aaa;
+    font-weight: bold;
+    font-family: Roboto;
+}
+
+input[type=text]{
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+select{
+    background-color: white;
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+input[type=text]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+select:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+.inputWidthIcon input[type=text]{
+    padding-left: 40px;
+}
+.inputWidthIcon select{
+    padding-left: 40px;
+}
+.inputWidthIcon{
+    position: relative;
+}
+.inputWidthIcon i {
+    position: absolute;
+    left: 4px;
+    top:19px ;
+    color: #aaa;
+    transition: .3s;
+}
+.inputWidthIcon .fa-ring{
+    top: 30px;
+    left: 10px;
+}
+.inputWidthIcon select i {
+    position: absolute;
+    left: 4px;
+    top:19px ;
+    color: #aaa;
+    transition: .3s;
+}
+.inputWidthIcon input[type=text]:focus+i{
+    color: dodgerblue;
+}
+.inputWidthIcon select:focus+i{
+    color: dodgerblue;
+}
+
+.fa-trash-alt{
+    color: white;
+}
+.fa-edit{
+    color:white;
+}
+.fa-edit:hover{
+    color: #aaa;
+    cursor: pointer;
+    transition: .5s;
+}
+.fa-trash-alt:hover{
+    color: #aaa;
+    cursor: pointer;
+    transition: .5s;
+}
+tr:hover {
+    background:  #1C71B1;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+}
