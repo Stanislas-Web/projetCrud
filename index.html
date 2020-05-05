@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://pagecdn.io/lib/semantic-ui/2.2.9/semantic.min.css"/>
+  <script src="https://pagecdn.io/lib/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://pagecdn.io/lib/semantic-ui/2.2.9/semantic.min.js"></script>
+  <title>Modifier et Supprimer</title>
+</head>
+<body>
+<header>
+      <h1>CRUD avec Javascript (Modifier et supprimer) </h1>
+</header>
+<main>
+  <!-- <form onsubmit="event.preventDefault();onFormSubmit();"> -->
+    <form>
+    <div class="inputWidthIcon" id="nom">
+      <input type="text" placeholder="Entrez votre Nom" name="nom" id="nom">
+      <i class="fas fa-user-tie fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+
+    <div class="inputWidthIcon" id="prenom">
+      <input type="text" placeholder="Entrez votre Prénom" name="prenom" id="prenom">
+      <i class="far fa-user fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+
+    <div class="inputWidthIcon" id="email">
+      <input type="email" placeholder="Entrez votre Email" name="email" id="email">
+      <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="inputWidthIcon">
+      <input type="text" placeholder="Entrez votre Age" name="age" id="age">
+      <i class="fa fa-birthday-cake fa-lg fa-fw" aria-hidden="true" ></i>
+    </div>
+
+    <div class="inputWidthIcon" id="poste">
+      <input type="text" placeholder="Entrez votre Poste" name="poste" id="poste">
+      <i class="fas fa-briefcase fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+
+    <div class="inputWidthIcon" id="numero">
+      <input type="text" placeholder="Entrez votre Numéro" name="numero" id="numero">
+      <i class="fas fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="inputWidthIcon"> 
+    <label for="statut">Etes-Vous Marié ?</label> <br> 
+    <select name="statut" id="statut" value="">
+      <option value="true">Oui</option>
+      <option value="false">Non</option>
+    </select>
+    <i class="fas fa-ring"></i>
+  </div> 
+    <div class="inputWidthIcon" id="pays">
+      <input type="text" placeholder="Entrez votre Pays d'origine" name="pays" id="pays">
+      <i class="fa fa-flag fa-lg fa-fw" aria-hidden="true"></i>
+    </div> <br>
+
+    <input  class="ui blue button" id="ajouter" type="submit" value="Ajouter">
+    <input  class="ui blue button" id="modifier" type="submit" value="Modifier">
+
+  </form>
+  <br>
+  <div>
+    
+    <table class="ui inverted blue table">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>email</th>
+            <th>Age</th>
+            <th>Poste</th>
+            <th>Numero de telephone</th>
+            <th>statut</th>
+            <th>Pays</th>
+            <th></th>
+            <th></th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
